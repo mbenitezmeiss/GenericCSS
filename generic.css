@@ -1,0 +1,915 @@
+@charset "utf-8";
+/* CSS Document */
+<style>
+/**********************************************************************
+	NAME: generic.css
+	DATE: 2015-01-08
+	PURPOSE: This contains many generic created CSS classes which can 
+			 be used together or apart to get the desired effects 
+			 instead of creating more custom classes.
+	
+	NOTES:
+		- The hover effects are the same name as the standard effects 
+		  but with the word "Hover" at the end of the standard classes
+		  (e.g. redHover)
+		- Font sizes have 3 classes assigned to each size; one for
+		  percent, one for pixel and one for point. They all match up
+		  accordingly to the size stated (or about). E.g.: 'txt100Perc',
+		  'txt12PT', and 'txt16PX' all refer to the same font size.
+		  Class names follow that same naming convention.
+		- Background colors are the color name (some have several
+		  variations such as grey/gray) and "BG" at the end 
+		  (e.g. redBG).
+		- Border colors start with "border" then the color name (e.g.
+		  borderRed).
+
+	UPDATES:
+		[2015-01-DD M.BENITEZMEISS] Created this file. 
+**********************************************************************/
+
+	/***********************************************************************/
+	/* TEXT STYLES - START
+	/***********************************************************************/
+		/* alignment */
+		/* do not change alignment during hovers, this is VERY BAD web practice */
+		.left
+		{
+			text-align:left!important;
+		}
+		.right
+		{
+			text-align:right!important;
+		}
+		.center
+		{
+			text-align:center!important;
+		}
+		.justify
+		{
+			text-align:justify!important;
+		}
+		
+		.top
+		{
+			vertical-align:top!important;
+		}
+		.bottom
+		{
+			vertical-align:bottom!important;
+		}
+		.middle
+		{
+			vertical-align:middle!important;
+		}
+		/* font families */
+		.Verdana
+		{
+			font-family: Verdana, Geneva, Arial, Helvetica, sans-serif!important;
+		}
+		.Arial
+		{
+			font-family: Arial, Helvetica, sans-serif!important;
+		}
+		
+		/* general font styles */
+		.bold, .boldHover:hover
+		{
+			font-weight:bold!important;
+		}
+		.light, .lightHover:hover
+		{
+			font-weight:lighter!important;
+		}
+		.normal, .normalHover:hover
+		{
+			font-weight:normal!important;
+		}
+		.italic, .italicHover:hover
+		{
+			font-style:italic!important;
+		}
+		.oblique, obliqueHover:hover
+		{
+			font-style:oblique!important;
+		}
+		.underline, .underlineHover:hover
+		{
+			text-decoration:underline!important;
+		}
+		.overline, .overlineHover:hover
+		{
+			text-decoration:overline!important;
+		}
+		.linethrough, .linethroughHover:hover
+		{
+			text-decoration:line-through!important;
+		}
+		.blink, .blinkHover:hover
+		{
+			text-decoration:blink!important;
+		}
+		.nodecoration, nodecorationHover:hover
+		{
+			text-decoration:none!important;
+		}
+		.caps, capsHover:hover
+		{
+			text-transform:uppercase!important;
+		}
+		.capsFirst, capsFirstHover:hover
+		{
+			text-transform:capitalize!important;
+		}
+		.lowercase, .lowercaseHover:hover
+		{
+			text-transform:lowercase!important;
+		}
+		.smallcaps, .smallcapsHover:hover
+		{
+			font-variant:small-caps!important;
+		}
+		.nocase, .nocaseHover:hover
+		{
+			text-transform:none!important;	
+		}
+		
+		/* font colors */
+		.black, blackHover:hover
+		{
+			color:#000000!important;
+		}
+		.grey, .gray, .greyHover:hover, .grayHover:hover
+		{
+			color:#999999!important;
+		}
+		.lightgrey, .lightgray, .lightgreyHover:hover, .lightgrayHover:hover
+		{
+			color:#CCCCCC!important;
+		}
+		.darkgrey, .darkgray, .darkgreyHover:hover, .darkgrayHover:hover
+		{
+			color:#333333!important;
+		}
+		.white, .whiteHover:hover
+		{
+			color:#FFFFFF!important;
+		}
+		.offwhite, .offwhiteHover:hover
+		{
+			color:#EEEEEE!important;
+		}
+		.cream, creamHover:hover
+		{
+			color:#FFFFCC!important;
+		}
+		.red, .redHover:hover
+		{
+			color:#FF0000!important;
+		}
+		.lightred, .lightredHover:hover
+		{
+			color:#ff4c4c!important;
+		}
+		.darkred, .darkredHover:hover
+		{
+			color:#990000!important;
+		}
+		.orange, .orangeHover:hover
+		{
+			color:#FF8800!important;
+		}
+		.lightorange, .lightorangeHover:hover
+		{
+			color:#ffa033!important;
+		}
+		.darkorange, .darkorangeHover:hover
+		{
+			color:#e67a00!important;
+		}
+		.yellow, .yellowHover:hover
+		{
+			color:#FFFF00!important;
+		}
+		.lightyellow, .lightyellowHover:hover
+		{
+			color:#ffffb2!important;
+		}
+		.darkyellow, .darkyellowHover:hover
+		{
+			color:#cccc00!important;
+		}
+		.green, .greenHover:hover
+		{
+			color:#008000!important;
+		}
+		.lightgreen, .lightgreen:hover
+		{
+			color:#99cc99!important;
+		}
+		.darkgreen, .darkgreenHover:hover
+		{
+			color:#003300!important;
+		}
+		.blue, .blueHover:hover
+		{
+		  color:#0000FF!important;
+		}
+		.darkblue, .darkblueHover:hover
+		{
+			color:#000033!important;
+		}
+		.lightblue, .lightblueHover:hover
+		{
+			color:#9999ff!important;
+		}
+		.purple, .purpleHover:hover
+		{
+			color:#800080!important;
+		}
+		.lightpurple, .lightpurpleHover:hover
+		{
+			color:#cc99cc!important;
+		}
+		.darkpurple, .darkpurpleHover:hover
+		{
+			color:#330033!important;
+		}
+		.brown, .brownHover:hover
+		{
+			color:#A5682A!important;
+		}
+		.lightbrown, .lightbrownHover:hover
+		{
+			color:#c9a47f!important;
+		}
+		.darkbrown, .darkbrownHover:hover
+		{
+			color:#422910!important;
+		}
+		.gold, .goldHover:hover
+		{
+			color:#BBBC85!important;
+		}
+		.silver, .silverHover:hover
+		{
+			color:#C0C0C0!important;
+		}
+		.pink, .pinkHover:hover
+		{
+			color:#FFC0CB!important;
+		}
+		.aqua, .aquaHover:hover
+		{
+			color:#FFC0CB!important;
+		}
+		.aqua, .aquaHover:hover
+		{
+			color:#00FFFF!important;
+		}
+		.lime, .limeHover:hover
+		{
+			color:#00FF00!important;
+		}
+		.magenta, .magentaHover:hover
+		{
+			color:#FF00FF!important;
+		}
+		.teal, .tealHover:hover
+		{
+			color:#008080!important;
+		}
+		.raspberry, .raspberryHover:hover
+		{
+			color:#a11da1!important;
+		}
+		
+		/* font sizes */
+		.txt50Perc, .txt6PT, .txt8PX, .txt50PercHover:hover, .txt6PTHover:hover, .txt8PXHover:hover
+		{
+			font-size:50%!important;
+		}
+		.txt55Perc, .txt7PT, .txt9PX, .txt55PercHover:hover, .txt7PTHover:hover, .txt9PXHover:hover
+		{
+			font-size:55%!important;
+		}
+		.txt60Perc, .txt7-5PT, .txt10PX, .txt60PercHover:hover, .txt7-5PTHover:hover, .txt10PXHover:hover
+		{
+			font-size:62.5%!important;
+		}
+		.txt70Perc, .txt8PT, .txt11PX, .txt70PercHover:hover, .txt8PTHover:hover, .txt11PXHover:hover
+		{
+			font-size:70%!important;
+		}
+		.txt75Perc, .txt9PT, .txt12PX, .txt75PercHover:hover, .txt9PTHover:hover, .txt12PXHover:hover
+		{
+			font-size:75%!important;
+		}
+		.txt80Perc, .txt10PT, .txt13PX, .txt80PercHover:hover, .txt10PTHover:hover, .txt13PXHover:hover
+		{
+			font-size:80%!important;
+		}
+		.txt85Perc, .txt10-5PT, .txt14PX, .txt85PercHover:hover, .txt10-5PTHover:hover, .txt14PXHover:hover
+		{
+			font-size:87.5%!important;
+		}
+		.txt95Perc, .txt11PT, .txt15PX, .txt95PercHover:hover, .txt11PTHover:hover, .txt15PXHover:hover
+		{
+			font-size:95%!important;
+		}
+		.txt100Perc, .txt12PT, .txt16PX, .txt100PercHover:hover, .txt12PTHover:hover, .txt16PXHover:hover
+		{
+			font-size:100%!important;
+		}
+		.txt115Perc, .txt13-5PT, .txt18PX, .txt115PercHover:hover, .txt13-5PTHover:hover, .txt18PXHover:hover
+		{
+			font-size:112.5%!important;
+		}
+		.txt120Perc, .txt14PT, .txt19PX, .txt._120PercHover:hover, .txt14PTHover:hover, .txt19PXHover:hover
+		{
+			font-size:120%!important;
+		}
+		.txt125Perc, .txt14-5PT, .txt20PX, .txt125PercHover:hover, .txt14-5PTHover:hover, .txt20PXHover:hover
+		{
+			font-size:125%!important;
+		}
+		.txt130Perc, .txt15PT, .txt21PX, .txt130PercHover:hover, .txt15PTHover:hover, .txt21PXHover:hover
+		{
+			font-size:130%!important;
+		}
+		.txt140Perc, .txt16PT, .txt22PX, .txt140PercHover:hover, .txt16PTHover:hover, .txt22PXHover:hover
+		{
+			font-size:140%!important;
+		}
+		.txt150Perc, .txt18PT, .txt24PX, .txt150PercHover:hover, .txt18PTHover:hover, .txt24PXHover:hover
+		{
+			font-size:140%!important;
+		}
+		.txt160Perc, .txt20PT, .txt26PX, .txt160PercHover:hover, .txt20PTHover:hover, .txt26PXHover:hover
+		{
+			font-size:140%!important;
+		}
+		.txt180Perc, .txt22PT, .txt29PX, .txt180PercHover:hover, .txt22PTHover:hover, .txt29PXHover:hover
+		{
+			font-size:140%!important;
+		}
+		.txt200Perc, .txt24PT, .txt32PX, .txt200PercHover:hover, .txt24PTHover:hover, .txt32PXHover:hover
+		{
+			font-size:140%!important;
+		}
+		
+	/***********************************************************************/
+	/* TEXT STYLES - END
+	/***********************************************************************/
+		
+	/***********************************************************************/
+	/* BACKGROUNDS/HOVER BACKGROUNDS - START
+	/***********************************************************************/
+	
+		/* text background colors */
+		.blackBG, .blackBGHover:hover
+		{
+			background-color:#000000!important;
+		}
+		.greyBG, .grayBG, .greyBGHover:hover, .grayBGHover:hover
+		{
+			background-color:#999999!important;
+		}
+		.lightgreyBG, .lightgrayBG, .lightgreyBGHover:hover, .lightgrayBGHover:hover
+		{
+			background-color:#CCCCCC!important;
+		}
+		.darkgreyBG, .darkgrayBG, .darkgreyBGHover:hover, .darkgrayBGHover:hover
+		{
+			background-color:#333333!important;
+		}
+		.whiteBG, .whiteBGHover:hover
+		{
+			background-color:#FFFFFF!important;
+		}
+		.offwhiteBG, .offwhiteBGHover:hover
+		{
+			background-color:#EEEEEE!important;
+		}
+		.creamBG, .creamBGHover:hover
+		{
+			background-color:#FFFFCC!important;
+		}
+		.redBG, .redBGHover:hover
+		{
+			background-color:#FF0000!important;
+		}
+		.lightredBG, .lightredBGHover:hover
+		{
+			background-color:#ff4c4c!important;
+		}
+		.darkredBG, .darkredBGHover:hover
+		{
+			background-color:#990000!important;
+		}
+		.orangeBG, .orangeBGHover:hover
+		{
+			background-color:#FF8800!important;
+		}
+		.lightorangeBG, .lightorangeBGHover:hover
+		{
+			background-color:#ffa033!important;
+		}
+		.darkorangeBG, .darkorangeBGHover:hover
+		{
+			background-color:#e67a00!important;
+		}
+		.yellowBG, .yellowBGHover:hover
+		{
+			background-color:#FFFF00!important;
+		}
+		.lightyellowBG, .lightyellowBGHover:hover
+		{
+			background-color:#ffffb2!important;
+		}
+		.darkyellowBG, .darkyellowBGHover:hover
+		{
+			background-color:#cccc00!important;
+		}
+		.greenBG, .greenBGHover:hover
+		{
+			background-color:#008000!important;
+		}
+		.lightgreenBG, .lightgreenBGHover:hover
+		{
+			background-color:#99cc99!important;
+		}
+		.darkgreenBG, .darkgreenBGHover:hover
+		{
+			background-color:#003300!important;
+		}
+		.blueBG, .blueBGHover:hover
+		{
+			background-color:#0000FF!important;	
+		}
+		.lightblueBG, .lightblueBGHover:hover
+		{
+			background-color:#9999ff!important;
+		}
+		.darkblueBG, .darkblueBGHover:hover
+		{
+			background-color:#000033!important;
+		}
+		.purpleBG, .purpleBGHover:hover
+		{
+			background-color:#800080!important;	
+		}
+		.lightpurpleBG, .lightpurpleBGHover:hover
+		{
+			background-color:#cc99cc!important;
+		}
+		.darkpurpleBG, .darkpurpleBGHover:hover
+		{
+			background-color:#330033!important;
+		}
+		.brownBG, .brownBGHover:hover
+		{
+			background-color:#A5682A!important;
+		}
+		.lightbrownBG, .lightbrownBGHover:hover
+		{
+			background-color:#c9a47f!important;
+		}
+		.darkbrownBG, .darkbrownBGHover:hover
+		{
+			background-color:#422910!important;
+		}
+		.goldBG, .goldBGHover:hover
+		{
+			background-color:#BBBC85!important;
+		}
+		.silverBG, .silverBGHover:hover
+		{
+			background-color:#BBBC85!important;
+		}
+		.pinkBG, .pinkBGHover:hover
+		{
+			background-color:#FFC0CB!important;
+		}
+		.aquaBG, .aquaBGHover:hover
+		{
+			background-color:#00FFFF!important;
+		}
+		.limeBG, .limeBGHover:hover
+		{
+			background-color:#00FF00!important;
+		}
+		.magentaBG, .magentaBGHover:hover
+		{
+			background-color:#FF00FF!important;
+		}
+		.tealBG, .tealBGHover:hover
+		{
+			background-color:#008080!important;
+		}
+		.raspberryBG, .raspberryBGHover:hover
+		{
+			background-color:#a11da1!important;
+		}
+		
+	/***********************************************************************/
+	/* CELL BORDERS - START
+	/***********************************************************************/
+		
+		/* border widths, generic applies to all borders; use isolated borders below for single sides */
+		.noBorder, .noBorderHover:hover
+		{
+			border-width:0px!important;
+		}
+		.thinBorder, .thinBorderHover:hover
+		{
+			border-width:1px!important; 
+		}
+		.mediumBorder, .mediumBorderHover:hover
+		{
+			border-width:2px!important;
+		}
+		.thickBorder, .thickBorderHover:hover
+		{
+			border-width:3px!important;
+		}
+		
+		/* border styles, generic applies to any borders which are displayed */
+		.solid, .solidHover:hover
+		{
+			border-style:solid!important;
+		}
+		.grooved, .groovedHover:hover
+		{
+			border-style:groove!important;
+		}
+		.double, .doubleHover:hover
+		{
+			border-style:double!important;
+		}
+		.dashed, .dashedHover:hover
+		{
+			border-style:dashed!important;
+		}
+		.dotted, .dottedHover:hover
+		{
+			border-style:dotted!important;
+		}
+		.inset, .insetHover:hover
+		{
+			border-style:inset!important;
+		}
+		.outset, .outsetHover:hover
+		{
+			border-style:outset!important;
+		}
+		.ridge, .ridgeHover:hover
+		{
+			border-style:ridge!important;
+		}
+		.hidden, .hiddenHover:hover
+		{
+			border-style:hidden!important;
+		}
+		
+		/* isolated borders - custom borders will need to be in style tags */
+		/* bottom border */
+		.borderThinBottom, .borderThinBottomHover:hover
+		{
+			border-bottom-width:1px!important;
+		}
+		.borderMedBottom, .borderMedBottomHover:hover
+		{
+			border-bottom-width:2px!important;
+		}
+		.borderThickBottom, .borderThickBottomHover:hover
+		{
+			border-bottom-width:3px!important;
+		}
+		/* top border */
+		.borderThinTop, .borderThinTopHover:hover
+		{
+			border-top-width:1px!important;
+		}
+		.borderMedTop, .borderMedTopHover:hover
+		{
+			border-top-width:2px!important;
+		}
+		.borderThickTop, .borderThickTopHover:hover
+		{
+			border-top-width:3px!important;
+		}
+		/* left border */
+		.borderThinLeft, .borderThinLeftHover:hover
+		{
+			border-left-width:1px!important;
+		}
+		.borderMedLeft, .borderMedLeftHover:hover
+		{
+			border-left-width:2px!important;
+		}
+		.borderThickLeft, .borderThickLeftHover:hover
+		{
+			border-left-width:3px!important;
+		}
+		/* right border */
+		.borderThinRight, .borderThinRightHover:hover
+		{
+			border-right-width:1px!important;
+		}
+		.borderMedRight, .borderMedRightHover:hover
+		{
+			border-right-width:2px!important;
+		}
+		.borderThickRight, .borderThickRightHover:hover
+		{
+			border-right-width:3px!important;
+		}
+		/* top border only */
+		.borderTopOnly, .borderTopOnlyHover:hover
+		{
+			border-right-width:0px;
+			border-bottom-width:0px;
+			border-left-width:0px;
+		}
+		/* bottom border only */
+		.borderBottomOnly, .borderBottomOnlyHover:hover
+		{
+			border-top-width:0px;
+			border-right-width:0px;
+			border-left-width:0px;
+		}
+		/* left border only */
+		.borderLeftOnly, .borderLeftOnlyHover:hover
+		{
+			border-top-width:0px;
+			border-bottom-width:0px;
+			border-right-width:0px;
+		}
+		/* right border only */
+		.borderRightOnly, .borderRightOnlyHover:hover
+		{
+			border-top-width:0px;
+			border-bottom-width:0px;
+			border-left-width:0px;
+		}
+		
+				
+		/***********************************************************************/
+		/* border colors - START
+		/***********************************************************************/
+			
+			.borderBlack, .borderBlackHover:hover
+			{
+				border-color:#000000!important;
+			}
+			.borderGrey, .borderGray, .borderGreyHover:hover, .borderGrayHover:hover
+			{
+				border-color: #666666!important;		 
+			}
+			.borderDarkGrey, .borderDarkGray, .borderDarkGreyHover:hover, .borderDarkGrayHover:hover
+			{
+				border-color: #999999!important;	 
+			}
+			.borderLightGrey, .borderLightGray, .borderLightGreyHover:hover, .borderLightGrayHover:hover
+			{
+				border-color:#CCCCCC!important;
+			}
+			.borderWhite, .borderWhiteHover:hover
+			{
+				border-color: #ffffff!important;
+			}
+			.borderOffWhite, .borderOffWhiteHover:hover
+			{
+				border-color:#EEEEEE!important;
+			}
+			.borderCream, borderCreamHover:hover
+			{
+				border-color:#FFFFCC!important;
+			}
+			.borderRed, .borderRedHover:hover
+			{
+				border-color: #FF0000!important;
+			}
+			.borderLightRed, .borderLightRedHover:hover
+			{
+				border-color: #ff4c4c!important;
+			}
+			.borderDarkRed, .borderDarkRedHover:hover
+			{
+				border-color: #990000!important;
+			}
+			.borderOrange, .borderOrangeHover:hover
+			{
+				border-color: #FF8800!important;
+			}
+			.borderLightOrange, .borderLightOrangeHover:hover
+			{
+				border-color: #ffa033!important;
+			}
+			.borderDarkOrange, .borderDarkOrangeHover:hover
+			{
+				border-color: #e67a00!important;
+			}
+			.borderYellow, .borderYellowHover:hover
+			{
+				border-color: #FF8800!important;
+			}
+			.borderLightYellow, .borderLightYellowHover:hover
+			{
+				border-color: #ffffb2!important;
+			}
+			.borderDarkYellow, .borderDarkYellowHover:hover
+			{
+				border-color: #cccc00!important;
+			}
+			.borderGreen, .borderGreenHover:hover
+			{
+				border-color:#008000!important;
+			}
+			.borderLightGreen, .borderLightGreenHover:hover
+			{
+				border-color:#99cc99!important;
+			}
+			.borderDarkGreen, .borderDarkGreenHover:hover
+			{
+				border-color:#003300!important;
+			}
+			.borderBlue, .borderBlueHover:hover
+			{
+				border-color: #0000FF!important;
+			}
+			.borderLightblue, .borderLightblueHover:hover
+			{
+				border-color:#9999ff!important;
+			}
+			.borderDarkBlue, .borderDarkBlueHover:hover
+			{
+				border-color: #000033!important;
+			}
+			.borderPurple, .borderPurpleHover:hover
+			{
+				border-color:#800080!important;
+			}
+			.borderLightPurple, .borderLightPurpleHover:hover
+			{
+				border-color:#cc99cc!important;
+			}
+			.borderDarkPurple, .borderDarkPurpleHover:hover
+			{
+				border-color:#330033!important;
+			}
+			.borderBrown, .borderBrownHover:hover
+			{
+				border-color: #A5682A!important;
+			}
+			.borderLightBrown, .borderLightBrownHover:hover
+			{
+				border-color: #c9a47f!important;
+			}
+			.borderDarkBrown, .borderDarkBrownHover:hover
+			{
+				border-color: #422910!important;
+			}
+			.borderGold, .borderGoldHover:hover
+			{
+				border-color: #BBBC85!important;
+			}
+			.borderSilver, .borderSilverHover:hover
+			{
+				border-color: #BBBC85!important;
+			}
+			.borderPink, .borderPinkHover:hover
+			{
+				border-color:#FFC0CB!important;
+			}
+			.borderAqua, .borderAquaHover:hover
+			{
+				border-color:#00FFFF!important;
+			}
+			.borderLime, .borderLimeHover:hover
+			{
+				border-color:#00FF00!important;
+			}
+			.borderMagenta, .borderMagentaHover:hover
+			{
+				border-color:#FF00FF!important;
+			}
+			.borderTeal, .borderTealHover:hover
+			{
+				border-color:#008080!important;
+			}
+			.borderRaspberry, .borderRaspberryHover:hover
+			{
+				border-color:#a11da1!important;
+			}
+		/***********************************************************************/
+		/* border colors - END
+		/************************************************************************/
+		
+		/***********************************************************************/
+		/* border effects - START
+		/************************************************************************/
+		
+			.rounded2px, .rounded2pxHover:hover
+			{
+				border-radius: 2px; 
+				-moz-border-radius: 2px; 
+				-webkit-border-radius: 2px;
+			}
+			.rounded4px, .rounded4pxHover:hover
+			{
+				border-radius: 4px; 
+				-moz-border-radius: 4px; 
+				-webkit-border-radius: 4px;
+			}
+			.rounded6px, .rounded6pxHover:hover
+			{
+				border-radius: 4px; 
+				-moz-border-radius: 4px; 
+				-webkit-border-radius: 4px;
+			}
+			.rounded8px, .rounded8pxHover:hover
+			{
+				border-radius: 4px; 
+				-moz-border-radius: 4px; 
+				-webkit-border-radius: 4px;
+			}
+			.rounded10px, .rounded10pxHover:hover
+			{
+				border-radius: 4px; 
+				-moz-border-radius: 4px; 
+				-webkit-border-radius: 4px;
+			}
+			.rounded15px, .rounded15pxHover:hover
+			{
+				border-radius: 4px; 
+				-moz-border-radius: 4px; 
+				-webkit-border-radius: 4px;
+			}
+			.rounded20px, .rounded20pxHover:hover
+			{
+				border-radius: 4px; 
+				-moz-border-radius: 4px; 
+				-webkit-border-radius: 4px;
+			}
+			
+			.shadowCloseDrop
+			{
+				box-shadow:2px 2px 8px #000000;
+			}
+			.shadowMidDrop
+			{
+				box-shadow:4px 4px 8px #000000;
+			}
+			.shadowFarDrop
+			{
+				box-shadow:8px 8px 8px #000000;
+			}
+			.shadowCloseEdges
+			{
+				box-shadow:0px 0px 5px #000000;
+			}
+			.shadowMidEdges
+			{
+				box-shadow:0px 0px 10px #000000;
+			}
+			.shadowFarEdges
+			{
+				box-shadow:0px 0px 15px #000000;
+			}
+		
+		/***********************************************************************/
+		/* border effects - START
+		/************************************************************************/
+			
+	/***********************************************************************/
+	/* CELL BORDERS - END
+	/***********************************************************************/
+
+	
+	/***********************************************************************/
+	/* CURSORS - START
+	/***********************************************************************/
+		.disabled, .cursorDisabled;
+		{
+			cursor:not-allowed;
+		}
+		.hand, .pointer, .cursorHand, .cursorPointer
+		{ 
+			 cursor: pointer; 
+			 cursor: hand; 
+		}
+		.help, .cursorHelp
+		{
+			cursor:help;
+		}
+		
+		.cursorDefault
+		{
+			cursor:default;
+		}
+	/***********************************************************************/
+	/* CURSORS - START
+	/***********************************************************************/
+
+</style>
