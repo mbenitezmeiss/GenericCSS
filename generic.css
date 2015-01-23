@@ -824,33 +824,33 @@
 			}
 			.rounded6px, .rounded6pxHover:hover
 			{
-				border-radius: 4px; 
-				-moz-border-radius: 4px; 
-				-webkit-border-radius: 4px;
+				border-radius: 6px; 
+				-moz-border-radius: 6px; 
+				-webkit-border-radius: 6px;
 			}
 			.rounded8px, .rounded8pxHover:hover
 			{
-				border-radius: 4px; 
-				-moz-border-radius: 4px; 
-				-webkit-border-radius: 4px;
+				border-radius: 8px; 
+				-moz-border-radius: 8px; 
+				-webkit-border-radius: 8px;
 			}
 			.rounded10px, .rounded10pxHover:hover
 			{
-				border-radius: 4px; 
-				-moz-border-radius: 4px; 
-				-webkit-border-radius: 4px;
+				border-radius: 10px; 
+				-moz-border-radius: 10px; 
+				-webkit-border-radius: 10px;
 			}
 			.rounded15px, .rounded15pxHover:hover
 			{
-				border-radius: 4px; 
-				-moz-border-radius: 4px; 
-				-webkit-border-radius: 4px;
+				border-radius: 15px; 
+				-moz-border-radius: 15px; 
+				-webkit-border-radius: 15px;
 			}
 			.rounded20px, .rounded20pxHover:hover
 			{
-				border-radius: 4px; 
-				-moz-border-radius: 4px; 
-				-webkit-border-radius: 4px;
+				border-radius: 20px; 
+				-moz-border-radius: 20px; 
+				-webkit-border-radius: 20px;
 			}
 			
 			.shadowCloseDrop
