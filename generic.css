@@ -8,6 +8,30 @@
 			 be used together or apart to get the desired effects 
 			 instead of creating more custom classes.
 	
+	LICENSE:
+	
+		The MIT License (MIT)
+		
+		Copyright (c) 2015 Meia Benitez Meiss
+		
+		Permission is hereby granted, free of charge, to any person obtaining a copy
+		of this software and associated documentation files (the "Software"), to deal
+		in the Software without restriction, including without limitation the rights
+		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+		copies of the Software, and to permit persons to whom the Software is
+		furnished to do so, subject to the following conditions:
+		
+		The above copyright notice and this permission notice shall be included in all
+		copies or substantial portions of the Software.
+		
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+		SOFTWARE.
+			
 	NOTES:
 		- The hover effects are the same name as the standard effects 
 		  but with the word "Hover" at the end of the standard classes
@@ -22,10 +46,175 @@
 		  (e.g. redBG).
 		- Border colors start with "border" then the color name (e.g.
 		  borderRed).
-
 	UPDATES:
-		[2015-01-DD M.BENITEZMEISS] Created this file. 
+		[2015-01-27 M.BENITEZMEISS] Created this file. 
+		[2015-10-05 M.BENITEZMEISS] Added clearfix, nowrap and display classes. 
 **********************************************************************/
+
+	.clearfix
+	{
+		clear:both !important;
+	}
+	
+	.nowhitespace, .nowrap
+	{
+		white-space:nowrap !important;
+	}
+	
+		
+	/***********************************************************************/
+	/* DISPLAY - START
+	/***********************************************************************/
+	
+	.hide
+	{
+		display:none !important;
+	}
+	
+	.show
+	{
+		display:inherit !important;
+	}
+	
+	.block
+	{
+		display:block !important;
+	}
+	
+	.inline-block
+	{
+		display:inline-block !important;
+	}
+	
+	.flex
+	{
+		display: flex !important;
+	}
+	
+	.inline
+	{
+		display:inline !important;
+	}
+	
+	.inline-table
+	{
+		display:inline-table !important;
+	}
+	
+	.inline-flex
+	{
+		display:inline-flex !important;
+	}
+	
+	.list-item
+	{
+		display:list-item !important;
+	}
+	
+	.marker
+	{
+		display:marker !important;
+	}
+	
+	.run-in
+	{
+		display: run-in !important;
+	}
+	
+	.table
+	{
+		display:table !important;
+	}
+	
+	.table-caption
+	{
+		display: table-caption !important;
+	}
+	
+	.table-cell
+	{
+		display:table-cell !important;
+	}
+	
+	.table-column
+	{
+		display:table-column !important;
+	}
+	
+	.table-column-group
+	{
+		display:table-column-group !important;
+	}
+	
+	.table-footer-group
+	{
+		display:table-footer-group !important;
+	}
+	
+	.table-header-group
+	{
+		display:table-header-group !important;
+	}
+	
+	.table-row
+	{
+		display:table-row !important;
+	}
+	
+	.table-row-group
+	{
+		display:table-row-group !important;
+	}
+	
+	
+	/***********************************************************************/
+	/* DISPLAY - END
+	/***********************************************************************/
+	
+	
+	/***********************************************************************/
+	/* PADDING - START
+	/***********************************************************************/
+	
+	.no-padding
+	{
+		padding:0px!important;
+		margin:0px!important;
+	}
+	.no-padding-top
+	{
+		padding-top:0px!important;
+		margin-top:0px!important;
+	}
+	.no-padding-bottom
+	{
+		padding-bottom:0px!important;
+		margin-bottom:0px!important;
+	}
+	.padding-bottom-5px
+	{
+		padding-bottom:5px!important;
+	}
+	.padding-bottom-10px
+	{
+		padding-bottom:10px!important;
+	}
+	.padding-bottom-15px
+	{
+		padding-bottom:15px!important;
+	}
+	.padding-bottom-20px
+	{
+		padding-bottom:20px!important;
+	}
+	.padding-bottom-25px
+	{
+		padding-bottom:25px!important;
+	}
+	
+	/***********************************************************************/
+	/* PADDING - START
+	/***********************************************************************/
 
 	/***********************************************************************/
 	/* TEXT STYLES - START
@@ -61,6 +250,7 @@
 		{
 			vertical-align:middle!important;
 		}
+		
 		/* font families */
 		.Verdana
 		{
@@ -69,6 +259,42 @@
 		.Arial
 		{
 			font-family: Arial, Helvetica, sans-serif!important;
+		}
+		.Times
+		{
+			font-family:"Times New Roman", Times, serif !important;
+		}
+		.Trebuchet
+		{
+			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif !important;
+		}
+		.Tahoma
+		{
+			font-family:Tahoma, Geneva, sans-serif !important;
+		}
+		.Georgia
+		{
+			font-family:Georgia, "Times New Roman", Times, serif !important;
+		}
+		.Platino
+		{
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+		}
+		.CourierNew
+		{
+			font-family:"Courier New", Courier, monospace;
+		}
+		.Console
+		{
+			font-family:"Lucida Console", Monaco, monospace;
+		}
+		.ArialBlack
+		{
+			font-family:"Arial Black", Gadget, sans-serif !important;
+		}
+		.ComicSans
+		{
+			font-family:"Comic Sans MS", cursive !important;
 		}
 		
 		/* general font styles */
@@ -131,6 +357,98 @@
 		.nocase, .nocaseHover:hover
 		{
 			text-transform:none!important;	
+		}
+		
+		.fade-color, .fade-colorHover:hover
+		{
+			position:relative!important;
+			z-index:5!important;
+			-o-transition: color 0.5s ease-out, color 0.5s ease-in!important;
+			-moz-transition: color 0.5s ease-out, color 0.5s ease-in!important;
+			-khtml-transition: color 0.5s ease-out, color 0.5s ease-in!important;
+			-webkit-transition: color 0.5s ease-out, color 0.5s ease-in!important;
+			-ms-transition: color 0.5s ease-out, color 0.5s ease-in!important;
+			transition: color 0.5s ease-out, color 0.5s ease-in!important;
+		}
+		
+		.fadein-color, .fadein-colorHover:hover
+		{
+			-o-transition: color 0.5s ease-in!important;
+			-moz-transition: color 0.5s ease-in!important;
+			-khtml-transition: color 0.5s ease-in!important;
+			-webkit-transition: color 0.5s ease-in!important;
+			-ms-transition: color 0.5s ease-in!important;
+			transition: color 0.5s ease-in!important;
+		}
+		
+		.fadeout-color, .fadeout-colorHover:hover
+		{
+			-o-transition: color 0.5s ease-out!important;
+			-moz-transition: color 0.5s ease-out!important;
+			-khtml-transition: color 0.5s ease-out!important;
+			-webkit-transition: color 0.5s ease-out!important;
+			-ms-transition: color 0.5s ease-out!important;
+			transition: color 0.5s ease-out!important;
+		}
+		
+		.fadeBG, .fadeBGHover:hover
+		{
+			-o-transition: background 0.5s ease-out, background 0.5s ease-in!important;
+			-moz-transition: background 0.5s ease-out, background 0.5s ease-in!important;
+			-khtml-transition: background 0.5s ease-out, background 0.5s ease-in!important;
+			-webkit-transition: background 0.5s ease-out, background 0.5s ease-in!important;
+			-ms-transition: background 0.5s ease-out, background 0.5s ease-in!important;
+			transition: background 0.5s ease-out, background 0.5s ease-in!important;
+		}
+		
+		.fadeinBG, .fadeinBGHover:hover
+		{
+			-o-transition: background 0.5s ease-in!important;
+			-moz-transition: background 0.5s ease-in!important;
+			-khtml-transition: background 0.5s ease-in!important;
+			-webkit-transition: background 0.5s ease-in!important;
+			-ms-transition: background 0.5s ease-in!important;
+			transition: background 0.5s ease-in!important;
+		}
+		
+		.fadeoutBG, .fadeoutBGHover:hover
+		{
+			-o-transition: color 0.5s ease-out!important;
+			-moz-transition: color 0.5s ease-out!important;
+			-khtml-transition: color 0.5s ease-out!important;
+			-webkit-transition: color 0.5s ease-out!important;
+			-ms-transition: color 0.5s ease-out!important;
+			transition: color 0.5s ease-out!important;
+		}
+		
+		.fadein-all, .fadein-allHover:hover
+		{
+			-o-transition: all 0.5s ease-in!important;
+			-moz-transition: all 0.5s ease-in!important;
+			-khtml-transition: all 0.5s ease-in!important;
+			-webkit-transition: all 0.5s ease-in!important;
+			-ms-transition: all 0.5s ease-in!important;
+			transition: all 0.5s ease-in!important;
+		}
+		
+		.fade-all, .fade-allHover:hover
+		{
+			-o-transition: all 0.5s ease-out, all 0.5s ease-in!important;
+			-moz-transition: all 0.5s ease-out, all 0.5s ease-in!important;
+			-khtml-transition: all 0.5s ease-out, all 0.5s ease-in!important;
+			-webkit-transition: all 0.5s ease-out, all 0.5s ease-in!important;
+			-ms-transition: all 0.5s ease-out, all 0.5s ease-in!important;
+			transition: all 0.5s ease-out, all 0.5s ease-in!important;
+		}
+		
+		.fadeout-all, .fadeout-allHover:hover
+		{
+			-o-transition: all 0.5s ease-out!important;
+			-moz-transition: all 0.5s ease-out!important;
+			-khtml-transition: all 0.5s ease-out!important;
+			-webkit-transition: all 0.5s ease-out!important;
+			-ms-transition: all 0.5s ease-out!important;
+			transition: all 0.5s ease-out!important;
 		}
 		
 		/* font colors */
@@ -728,6 +1046,7 @@
 			}
 			.borderLightGreen, .borderLightGreenHover:hover
 			{
+
 				border-color:#99cc99!important;
 			}
 			.borderDarkGreen, .borderDarkGreenHover:hover
@@ -802,6 +1121,43 @@
 			{
 				border-color:#a11da1!important;
 			}
+			
+			/* site specific background colors */
+			.borderEMCred, .borderEMCredHover:hover
+			{
+				border-color:#ea0001!important;
+			}
+			.borderEMCdkred, .borderEMCdkredHover:hover
+			{
+				border-color:#a30001!important;
+			}
+			
+			.borderEMCgrey, .borderEMCgray, .borderEMCgreyHover:hover, .borderEMCgrayHover:hover
+			{
+				border-color:#8c96a0!important;
+			}
+			.borderEMClightgrey, .borderEMClightgray, .borderEMClightgreyHover:hover, .borderEMClightgrayHover:hover
+			{
+				border-color:#babcbe!important;
+			}
+			
+			.borderEMCblue, .borderEMCblueHover:hover
+			{
+				border-color:#2c95dd!important;
+			}
+			.borderEMCdkblue, .borderEMCdkblueHover:hover
+			{
+				border-color:#0065a2!important;
+			}
+			
+			.borderEMCgreen, .borderEMCgreenHover:hover
+			{
+				border-color:#007d68!important;	
+			}
+			.borderEMCdkgreen, .borderEMCdkgreenHover:hover
+			{
+				border-color:#014b3e!important;	
+			}
 		/***********************************************************************/
 		/* border colors - END
 		/************************************************************************/
@@ -809,50 +1165,219 @@
 		/***********************************************************************/
 		/* border effects - START
 		/************************************************************************/
-		
+			
+			/* ROUNDED BORDERS */
+			/* 2px */
 			.rounded2px, .rounded2pxHover:hover
 			{
 				border-radius: 2px; 
-				-moz-border-radius: 2px; 
-				-webkit-border-radius: 2px;
 			}
+			.rounded2px_top-both, .rounded2px_top-bothHover:hover
+			{
+				border-top-radius: 2px; 
+			}
+			.rounded2px_top-left, .rounded2px_top-leftHover:hover
+			{
+				border-top-left-radius: 2px; 
+			}
+			.rounded2px_top-right, .rounded2px_top-rightHover:hover
+			{
+				border-top-right-radius: 2px; 
+			}
+			.rounded2px_bottom-both, .rounded2px_bottom-bothHover:hover
+			{
+				border-bottom-radius: 2px;
+			}
+			.rounded2px_bottom-left, .rounded2px_bottom-leftHover:hover
+			{
+				border-bottom-left-radius: 2px;
+			}
+			.rounded2px_bottom-right, .rounded2px_bottom-rightHover:hover
+			{
+				border-bottom-right-radius: 2px; 
+			}
+			
+			/* 4px */
 			.rounded4px, .rounded4pxHover:hover
 			{
 				border-radius: 4px; 
-				-moz-border-radius: 4px; 
-				-webkit-border-radius: 4px;
 			}
+			.rounded4px_top-both, .rounded4px_top-bothHover:hover
+			{
+				border-top-radius: 4px; 
+			}
+			.rounded4px_top-left, .rounded4px_top-leftHover:hover
+			{
+				border-top-left-radius: 4px; 
+			}
+			.rounded4px_top-right, .rounded4px_top-rightHover:hover
+			{
+				border-top-right-radius: 4px; 
+			}
+			.rounded4px_bottom-both, .rounded4px_bottom-bothHover:hover
+			{
+				border-bottom-radius: 4px;
+			}
+			.rounded4px_bottom-left, .rounded4px_bottom-leftHover:hover
+			{
+				border-bottom-left-radius: 4px;
+			}
+			.rounded4px_bottom-right, .rounded4px_bottom-rightHover:hover
+			{
+				border-bottom-right-radius: 4px; 
+			}
+			
+			/* 6px */
 			.rounded6px, .rounded6pxHover:hover
 			{
 				border-radius: 6px; 
-				-moz-border-radius: 6px; 
-				-webkit-border-radius: 6px;
 			}
+			.rounded4px_top-both, .rounded4px_top-bothHover:hover
+			{
+				border-top-radius: 4px; 
+			}
+			.rounded4px_top-left, .rounded4px_top-leftHover:hover
+			{
+				border-top-left-radius: 4px; 
+			}
+			.rounded4px_top-right, .rounded4px_top-rightHover:hover
+			{
+				border-top-right-radius: 4px; 
+			}
+			.rounded4px_bottom-both, .rounded4px_bottom-bothHover:hover
+			{
+				border-bottom-radius: 4px;
+			}
+			.rounded4px_bottom-left, .rounded4px_bottom-leftHover:hover
+			{
+				border-bottom-left-radius: 4px;
+			}
+			.rounded4px_bottom-right, .rounded4px_bottom-rightHover:hover
+			{
+				border-bottom-right-radius: 4px; 
+			}
+			
+			/* 8px */
 			.rounded8px, .rounded8pxHover:hover
 			{
 				border-radius: 8px; 
-				-moz-border-radius: 8px; 
-				-webkit-border-radius: 8px;
 			}
+			.rounded8px_top-both, .rounded8px_top-bothHover:hover
+			{
+				border-top-radius: 8px; 
+			}
+			.rounded8px_top-left, .rounded8px_top-leftHover:hover
+			{
+				border-top-left-radius: 8px; 
+			}
+			.rounded8px_top-right, .rounded8px_top-rightHover:hover
+			{
+				border-top-right-radius: 8px; 
+			}
+			.rounded8px_bottom-both, .rounded8px_bottom-bothHover:hover
+			{
+				border-bottom-radius: 8px;
+			}
+			.rounded8px_bottom-left, .rounded8px_bottom-leftHover:hover
+			{
+				border-bottom-left-radius: 8px;
+			}
+			.rounded8px_bottom-right, .rounded8px_bottom-rightHover:hover
+			{
+				border-bottom-right-radius: 8px; 
+			}
+			
+			/* 10px */
 			.rounded10px, .rounded10pxHover:hover
 			{
 				border-radius: 10px; 
-				-moz-border-radius: 10px; 
-				-webkit-border-radius: 10px;
 			}
+			.rounded10px_top-both, .rounded10px_top-bothHover:hover
+			{
+				border-top-radius: 10px; 
+			}
+			.rounded10px_top-left, .rounded10px_top-leftHover:hover
+			{
+				border-top-left-radius: 10px; 
+			}
+			.rounded10px_top-right, .rounded10px_top-rightHover:hover
+			{
+				border-top-right-radius: 10px; 
+			}
+			.rounded10px_bottom-both, .rounded10px_bottom-bothHover:hover
+			{
+				border-bottom-radius: 10px;
+			}
+			.rounded10px_bottom-left, .rounded10px_bottom-leftHover:hover
+			{
+				border-bottom-left-radius: 10px;
+			}
+			.rounded10px_bottom-right, .rounded10px_bottom-rightHover:hover
+			{
+				border-bottom-right-radius: 10px; 
+			}
+			
+			/* 15px */
 			.rounded15px, .rounded15pxHover:hover
 			{
 				border-radius: 15px; 
-				-moz-border-radius: 15px; 
-				-webkit-border-radius: 15px;
 			}
-			.rounded20px, .rounded20pxHover:hover
+			.rounded15px_top-both, .rounded15px_top-bothHover:hover
 			{
-				border-radius: 20px; 
-				-moz-border-radius: 20px; 
-				-webkit-border-radius: 20px;
+				border-top-radius: 15px; 
+			}
+			.rounded15px_top-left, .rounded15px_top-leftHover:hover
+			{
+				border-top-left-radius: 15px; 
+			}
+			.rounded15px_top-right, .rounded15px_top-rightHover:hover
+			{
+				border-top-right-radius: 15px; 
+			}
+			.rounded15px_bottom-both, .rounded15px_bottom-bothHover:hover
+			{
+				border-bottom-radius: 15px;
+			}
+			.rounded15px_bottom-left, .rounded15px_bottom-leftHover:hover
+			{
+				border-bottom-left-radius: 15px;
+			}
+			.rounded15px_bottom-right, .rounded15px_bottom-rightHover:hover
+			{
+				border-bottom-right-radius: 15px; 
 			}
 			
+			/* 20px */
+			.rounded20px, .rounded20pxHover:hover
+			{
+				border-radius: 20px;
+			}
+			.rounded20px_top-both, .rounded20px_top-bothHover:hover
+			{
+				border-top-radius: 20px; 
+			}
+			.rounded20px_top-left, .rounded20px_top-leftHover:hover
+			{
+				border-top-left-radius: 20px; 
+			}
+			.rounded20px_top-right, .rounded20px_top-rightHover:hover
+			{
+				border-top-right-radius: 20px; 
+			}
+			.rounded20px_bottom-both, .rounded20px_bottom-bothHover:hover
+			{
+				border-bottom-radius: 20px;
+			}
+			.rounded20px_bottom-left, .rounded20px_bottom-leftHover:hover
+			{
+				border-bottom-left-radius: 20px;
+			}
+			.rounded20px_bottom-right, .rounded20px_bottom-rightHover:hover
+			{
+				border-bottom-right-radius: 20px; 
+			}
+			
+			/* DROP SHADOW EFFECTS */
 			.shadowCloseDrop
 			{
 				box-shadow:2px 2px 8px #000000;
@@ -886,6 +1411,54 @@
 	/* CELL BORDERS - END
 	/***********************************************************************/
 
+	/***********************************************************************/
+	/* PADDING - START
+	/***********************************************************************/
+	
+		.padding1px, .padding1pxHover:hover
+		{
+			padding:1px!important;
+		}
+		.padding2px, .padding2pxHover:hover
+		{
+			padding:2px!important;
+		}
+		.padding3px, .padding3pxHover:hover
+		{
+			padding:3px!important;
+		}
+		.padding4px, .padding4pxHover:hover
+		{
+			padding:4px!important;
+		}
+		.padding5px, .padding5pxHover:hover
+		{
+			padding:5px!important;
+		}
+		.padding6px, .padding6pxHover:hover
+		{
+			padding:6px!important;
+		}
+		.padding7px, .padding7pxHover:hover
+		{
+			padding:7px!important;
+		}
+		.padding8px, .padding8pxHover:hover
+		{
+			padding:8px!important;
+		}
+		.padding9px, .padding9pxHover:hover
+		{
+			padding:9px!important;
+		}
+		.padding10px, .padding10pxHover:hover
+		{
+			padding:10px!important;
+		}
+	
+	/***********************************************************************/
+	/* PADDING - END
+	/***********************************************************************/
 	
 	/***********************************************************************/
 	/* CURSORS - START
@@ -909,7 +1482,7 @@
 			cursor:default;
 		}
 	/***********************************************************************/
-	/* CURSORS - START
+	/* CURSORS - END
 	/***********************************************************************/
 
 </style>
