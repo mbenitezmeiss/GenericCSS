@@ -49,6 +49,8 @@
 	UPDATES:
 		[2015-01-27 M.BENITEZMEISS] Created this file. 
 		[2015-10-05 M.BENITEZMEISS] Added clearfix, nowrap and display classes. 
+		[2015-10-13 M.BENITEZMEISS] Added margin only, and list bullet styles. 
+		[2016-12-04 M.BENITEZMEISS] Added truncate & fade classes. 
 **********************************************************************/
 
 	.clearfix
@@ -59,6 +61,14 @@
 	.nowhitespace, .nowrap
 	{
 		white-space:nowrap !important;
+	}
+	
+	.truncate 
+	{	/* should add fixed with to the element */
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
 	}
 	
 		
@@ -179,17 +189,14 @@
 	.no-padding
 	{
 		padding:0px!important;
-		margin:0px!important;
 	}
 	.no-padding-top
 	{
 		padding-top:0px!important;
-		margin-top:0px!important;
 	}
 	.no-padding-bottom
 	{
 		padding-bottom:0px!important;
-		margin-bottom:0px!important;
 	}
 	.padding-bottom-5px
 	{
@@ -210,6 +217,328 @@
 	.padding-bottom-25px
 	{
 		padding-bottom:25px!important;
+	}
+	
+	.no-padding-top
+	{
+		padding-top:0px!important;
+	}
+	.padding-top-5px
+	{
+		padding-top:5px!important;
+	}
+	.padding-top-10px
+	{
+		padding-top:10px!important;
+	}
+	.padding-top-15px
+	{
+		padding-top:15px!important;
+	}
+	.padding-top-20px
+	{
+		padding-top:20px!important;
+	}
+	.padding-top-25px
+	{
+		padding-top:25px!important;
+	}
+	
+	.no-padding-left
+	{
+		padding-left:0px!important;
+	}
+	.padding-left-5px
+	{
+		padding-left:5px!important;
+	}
+	.padding-left-10px
+	{
+		padding-left:10px!important;
+	}
+	.padding-left-15px
+	{
+		padding-left:15px!important;
+	}
+	.padding-left-20px
+	{
+		padding-left:20px!important;
+	}
+	.padding-left-25px
+	{
+		padding-left:25px!important;
+	}
+	
+	.no-padding-right
+	{
+		padding-right:0px!important;
+	}
+	.padding-right-5px
+	{
+		padding-right:5px!important;
+	}
+	.padding-right-10px
+	{
+		padding-right:10px!important;
+	}
+	.padding-left-15px
+	{
+		padding-right:15px!important;
+	}
+	.padding-right-20px
+	{
+		padding-right:20px!important;
+	}
+	.padding-right-25px
+	{
+		padding-right:25px!important;
+	}
+	
+	.padding1px, .padding1pxHover:hover
+	{
+		padding:1px!important;
+	}
+	.padding2px, .padding2pxHover:hover
+	{
+		padding:2px!important;
+	}
+	.padding3px, .padding3pxHover:hover
+	{
+		padding:3px!important;
+	}
+	.padding4px, .padding4pxHover:hover
+	{
+		padding:4px!important;
+	}
+	.padding5px, .padding5pxHover:hover
+	{
+		padding:5px!important;
+	}
+	.padding6px, .padding6pxHover:hover
+	{
+		padding:6px!important;
+	}
+	.padding7px, .padding7pxHover:hover
+	{
+		padding:7px!important;
+	}
+	.padding8px, .padding8pxHover:hover
+	{
+		padding:8px!important;
+	}
+	.padding9px, .padding9pxHover:hover
+	{
+		padding:9px!important;
+	}
+	.padding10px, .padding10pxHover:hover
+	{
+		padding:10px!important;
+	}
+	
+	/***********************************************************************/
+	/* PADDING - END
+	/***********************************************************************/
+	
+	/***********************************************************************/
+	/* MARGIN - START
+	/***********************************************************************/
+	
+	.no-margin
+	{
+		margin:0px!important;
+	}
+	.no-margin-top
+	{
+		margin-top:0px!important;
+	}
+	.no-margin-bottom
+	{
+		margin-bottom:0px!important;
+	}
+	.margin-bottom-5px
+	{
+		margin-bottom:5px!important;
+	}
+	.margin-bottom-10px
+	{
+		margin-bottom:10px!important;
+	}
+	.margin-bottom-15px
+	{
+		margin-bottom:15px!important;
+	}
+	.margin-bottom-20px
+	{
+		margin-bottom:20px!important;
+	}
+	.margin-bottom-25px
+	{
+		margin-bottom:25px!important;
+	}
+	
+	.no-margin-top
+	{
+		margin-top:0px!important;
+	}
+	.margin-top-5px
+	{
+		margin-top:5px!important;
+	}
+	.margin-top-10px
+	{
+		margin-top:10px!important;
+	}
+	.margin-top-15px
+	{
+		margin-top:15px!important;
+	}
+	.margin-top-20px
+	{
+		margin-top:20px!important;
+	}
+	.margin-top-25px
+	{
+		margin-top:25px!important;
+	}
+	
+	.no-margin-left
+	{
+		margin-left:0px!important;
+	}
+	.margin-left-5px
+	{
+		margin-left:5px!important;
+	}
+	.margin-left-10px
+	{
+		margin-left:10px!important;
+	}
+	.margin-left-15px
+	{
+		margin-left:15px!important;
+	}
+	.margin-left-20px
+	{
+		margin-left:20px!important;
+	}
+	.margin-left-25px
+	{
+		margin-left:25px!important;
+	}
+	
+	.no-margin-right
+	{
+		margin-right:0px!important;
+	}
+	.margin-right-5px
+	{
+		margin-right:5px!important;
+	}
+	.margin-right-10px
+	{
+		margin-right:10px!important;
+	}
+	.margin-left-15px
+	{
+		margin-right:15px!important;
+	}
+	.margin-right-20px
+	{
+		margin-right:20px!important;
+	}
+	.margin-right-25px
+	{
+		margin-right:25px!important;
+	}
+	
+	.margin1px, .margin1pxHover:hover
+	{
+		margin:1px!important;
+	}
+	.margin2px, .margin2pxHover:hover
+	{
+		margin:2px!important;
+	}
+	.margin3px, .margin3pxHover:hover
+	{
+		margin:3px!important;
+	}
+	.margin4px, .margin4pxHover:hover
+	{
+		margin:4px!important;
+	}
+	.margin5px, .margin5pxHover:hover
+	{
+		margin:5px!important;
+	}
+	.margin6px, .margin6pxHover:hover
+	{
+		margin:6px!important;
+	}
+	.margin7px, .margin7pxHover:hover
+	{
+		margin:7px!important;
+	}
+	.margin8px, .margin8pxHover:hover
+	{
+		margin:8px!important;
+	}
+	.margin9px, .margin9pxHover:hover
+	{
+		margin:9px!important;
+	}
+	.margin10px, .margin10pxHover:hover
+	{
+		margin:10px!important;
+	}
+	
+	/***********************************************************************/
+	/* MARGIN - START
+	/***********************************************************************/
+	
+	/***********************************************************************/
+	/* LISTS - START
+	/***********************************************************************/
+	
+	.noBullets
+	{
+		list-style-type:none !important;
+	}
+	.bullets-circle
+	{
+		list-style-type:circle !important;
+	}
+	.bullets-disk
+	{
+		list-style-type:disk !important;
+	}
+	.bullets-square
+	{
+		list-style-type:square !important;
+	}
+	.bullets-decimal
+	{
+		list-style-type:decimal !important;
+	}
+	.bullets-zero-decimal
+	{
+		list-style-type:decimal-leading-zero !important;
+	}
+	.bullets-lower-alpha
+	{
+		list-style-type:lower-alpha !important;
+	}
+	.bullets-upper-alpha
+	{
+		list-style-type:upper-alpha !important;
+	}
+	.bullets-lower-greek
+	{
+		list-style-type:lower-greek !important;
+	}
+	.bullets-upper-greek
+	{
+		list-style-type:upper-greek !important;
 	}
 	
 	/***********************************************************************/
@@ -293,7 +622,7 @@
 			font-family:"Arial Black", Gadget, sans-serif !important;
 		}
 		.ComicSans
-		{
+		{	/* never use this unless client insists, horrible font */
 			font-family:"Comic Sans MS", cursive !important;
 		}
 		
@@ -338,7 +667,7 @@
 		{
 			text-decoration:none!important;
 		}
-		.caps, capsHover:hover
+		.caps, capsHover:hover, .uppercase, uppercaseHover:hover
 		{
 			text-transform:uppercase!important;
 		}
@@ -1352,7 +1681,7 @@
 			{
 				border-radius: 20px;
 			}
-			.rounded20px_top-both, .rounded20px_top-bothHover:hover
+			rounded20px_top-both, .rounded20px_top-bothHover:hover
 			{
 				border-top-radius: 20px; 
 			}
@@ -1409,55 +1738,6 @@
 			
 	/***********************************************************************/
 	/* CELL BORDERS - END
-	/***********************************************************************/
-
-	/***********************************************************************/
-	/* PADDING - START
-	/***********************************************************************/
-	
-		.padding1px, .padding1pxHover:hover
-		{
-			padding:1px!important;
-		}
-		.padding2px, .padding2pxHover:hover
-		{
-			padding:2px!important;
-		}
-		.padding3px, .padding3pxHover:hover
-		{
-			padding:3px!important;
-		}
-		.padding4px, .padding4pxHover:hover
-		{
-			padding:4px!important;
-		}
-		.padding5px, .padding5pxHover:hover
-		{
-			padding:5px!important;
-		}
-		.padding6px, .padding6pxHover:hover
-		{
-			padding:6px!important;
-		}
-		.padding7px, .padding7pxHover:hover
-		{
-			padding:7px!important;
-		}
-		.padding8px, .padding8pxHover:hover
-		{
-			padding:8px!important;
-		}
-		.padding9px, .padding9pxHover:hover
-		{
-			padding:9px!important;
-		}
-		.padding10px, .padding10pxHover:hover
-		{
-			padding:10px!important;
-		}
-	
-	/***********************************************************************/
-	/* PADDING - END
 	/***********************************************************************/
 	
 	/***********************************************************************/
